@@ -119,7 +119,7 @@ namespace MTI_Alg
                     }
                 }
     
-                return Convert.ToString(tpr1% 1000000);
+                return Convert.ToString(tpr1% 10000);
             
         }
 

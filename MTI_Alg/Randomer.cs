@@ -28,7 +28,7 @@ namespace MTI_Alg
             uint s = 0;
             while ((s >= limit)|(s<=2))
                 {
-                s = Generate(s)%100;
+                s = Generate(s)%10;
             }
             return s;
         }
