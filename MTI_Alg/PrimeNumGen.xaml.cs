@@ -19,10 +19,14 @@ namespace MTI_Alg
     /// </summary>
     public partial class PrimeNumGen : Window
     {
-        public PrimeNumGen()
+        public PrimeNumGen(AliceWindow al,BobWindow bo)
         {
             InitializeComponent();
+            this.alice = al;
+            this.bob = bo;
         }
+        AliceWindow alice;
+        BobWindow bob;
         private ulong pr1;
         private ulong pr2;
         private Randomer RNG = new Randomer();
@@ -138,6 +142,13 @@ namespace MTI_Alg
             }
             PrimeCheckWindow win = new PrimeCheckWindow(old);
             win.Show();
+        }
+
+        private void SendBack_Click(object sender, RoutedEventArgs e)
+        {
+            alice.n_value.Content = Result.Content;
+            bob.n_value.Content = Result.Content;
+            this.Close();
         }
     }
 }

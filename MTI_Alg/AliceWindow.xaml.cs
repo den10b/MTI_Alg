@@ -31,7 +31,7 @@ namespace MTI_Alg
 
         private void NGen_Click(object sender, RoutedEventArgs e)
         {
-            PrimeNumGen win = new PrimeNumGen();
+            PrimeNumGen win = new PrimeNumGen(this,bobWindow);
             win.Show();
         }
 

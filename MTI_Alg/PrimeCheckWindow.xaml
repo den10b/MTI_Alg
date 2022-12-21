@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MTI_Alg"
         mc:Ignorable="d"
-        Title="PrimeCheckWindow" Height="450" Width="800">
-    <Grid x:Name="Gridd">
+        Title="PrimeCheckWindow" Height="465" Width="374">
+    <Grid x:Name="Gridd" Margin="0,0,0,1">
         <Label Content="Введите или выберите число для проверки" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="MyNum" HorizontalAlignment="Left" Margin="15,41,0,0" VerticalAlignment="Top" Width="244" IsEditable="True"/>
         <ComboBox HorizontalAlignment="Left" Margin="979,201,0,0" VerticalAlignment="Top" Width="120"/>
-        <CheckBox Content="Метод простых делений" HorizontalAlignment="Left" Margin="15,68,0,0" VerticalAlignment="Top" Checked="SimpDivCheckBox_Checked"/>
-        <ComboBox HorizontalAlignment="Left" Margin="17,88,0,0" VerticalAlignment="Top" Width="152"  IsEditable="True"/>
-        <CheckBox x:Name="LilFerma" Content="Малая Теорема Ферма" HorizontalAlignment="Left" Margin="15,115,0,0" VerticalAlignment="Top" Checked="LilFerma_Checked"/>
+        <CheckBox x:Name="PrimeDivCh" Content="Метод простых делений" HorizontalAlignment="Left" Margin="15,68,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="PrimeDiv" HorizontalAlignment="Left" Margin="17,88,0,0" VerticalAlignment="Top" Width="152"  IsEditable="True"/>
+        <CheckBox x:Name="LilFerma" Content="Малая Теорема Ферма" HorizontalAlignment="Left" Margin="15,115,0,0" VerticalAlignment="Top" />
 
-        <StackPanel x:Name="basisPanel" Margin="17,168,743,146">
+        <StackPanel x:Name="basisPanel" Margin="17,168,312,146">
             <RadioButton GroupName="Basis" Content="1" Checked="RadioButton_Checked"/>
             <RadioButton GroupName="Basis" Content="2" Checked="RadioButton_Checked" />
             <RadioButton GroupName="Basis" Content="3" Checked="RadioButton_Checked" />
@@ -35,5 +35,8 @@
         <TextBox x:Name="Box4" HorizontalAlignment="Left" Margin="86,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="Box5" HorizontalAlignment="Left" Margin="86,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="Box6" HorizontalAlignment="Left" Margin="86,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Результат:" HorizontalAlignment="Left" Margin="10,388,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Result" Content="" HorizontalAlignment="Left" Margin="75,391,0,37" Width="129"/>
+        <Button x:Name="TheButton" Content="Проверить" HorizontalAlignment="Left" Margin="15,349,0,0" VerticalAlignment="Top" Height="39" Width="191" Click="TheButton_Click"/>
     </Grid>
 </Window>
