@@ -127,7 +127,17 @@ namespace MTI_Alg
 
         private void PrimeCheck_Click(object sender, RoutedEventArgs e)
         {
-
+            int old = 7;
+            try
+            {
+                old = Convert.ToInt32(Result.Content);
+            }
+            catch
+            {
+                return;
+            }
+            PrimeCheckWindow win = new PrimeCheckWindow(old);
+            win.Show();
         }
     }
 }

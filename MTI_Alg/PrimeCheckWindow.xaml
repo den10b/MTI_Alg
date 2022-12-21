@@ -6,7 +6,34 @@
         xmlns:local="clr-namespace:MTI_Alg"
         mc:Ignorable="d"
         Title="PrimeCheckWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid x:Name="Gridd">
+        <Label Content="Введите или выберите число для проверки" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="MyNum" HorizontalAlignment="Left" Margin="15,41,0,0" VerticalAlignment="Top" Width="244" IsEditable="True"/>
+        <ComboBox HorizontalAlignment="Left" Margin="979,201,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Метод простых делений" HorizontalAlignment="Left" Margin="15,68,0,0" VerticalAlignment="Top" Checked="SimpDivCheckBox_Checked"/>
+        <ComboBox HorizontalAlignment="Left" Margin="17,88,0,0" VerticalAlignment="Top" Width="152"  IsEditable="True"/>
+        <CheckBox x:Name="LilFerma" Content="Малая Теорема Ферма" HorizontalAlignment="Left" Margin="15,115,0,0" VerticalAlignment="Top" Checked="LilFerma_Checked"/>
+
+        <StackPanel x:Name="basisPanel" Margin="17,168,743,146">
+            <RadioButton GroupName="Basis" Content="1" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="Basis" Content="2" Checked="RadioButton_Checked" />
+            <RadioButton GroupName="Basis" Content="3" Checked="RadioButton_Checked" />
+            <RadioButton GroupName="Basis" Content="4" Checked="RadioButton_Checked" />
+            <RadioButton GroupName="Basis" Content="5" Checked="RadioButton_Checked" />
+            <RadioButton GroupName="Basis" Content="6" Checked="RadioButton_Checked" />
+        </StackPanel>
+        <Label Content="Количество оснований" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label1" Content="1." HorizontalAlignment="Left" Margin="62,162,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label2" Content="2." HorizontalAlignment="Left" Margin="62,188,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label3" Content="3." HorizontalAlignment="Left" Margin="62,217,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label4" Content="4." HorizontalAlignment="Left" Margin="62,248,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label5" Content="5." HorizontalAlignment="Left" Margin="62,279,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label6" Content="6." HorizontalAlignment="Left" Margin="62,310,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Box1" HorizontalAlignment="Left" Margin="86,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Box2" HorizontalAlignment="Left" Margin="86,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Box3" HorizontalAlignment="Left" Margin="86,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Box4" HorizontalAlignment="Left" Margin="86,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Box5" HorizontalAlignment="Left" Margin="86,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Box6" HorizontalAlignment="Left" Margin="86,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
