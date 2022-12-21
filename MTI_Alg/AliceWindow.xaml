@@ -8,12 +8,36 @@
         Title="Alice" Height="450" Width="800">
     <Grid>
         <Label x:Name="n_label1" Content="n =" HorizontalAlignment="Left" Margin="30,41,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="p_label" Content="p =" HorizontalAlignment="Left" Margin="30,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="g_label" Content="g =" HorizontalAlignment="Left" Margin="30,72,0,0" VerticalAlignment="Top"/>
         <Label Content="Общие параметры" HorizontalAlignment="Left" Margin="30,15,0,0" VerticalAlignment="Top"/>
         <Label x:Name="n_value" Content="" HorizontalAlignment="Left" Margin="58,41,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="p_value" Content="" HorizontalAlignment="Left" Margin="58,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="g_value" Content="" HorizontalAlignment="Left" Margin="58,72,0,0" VerticalAlignment="Top"/>
         <Button x:Name="NGen" Content="Сгенерировать n" HorizontalAlignment="Left" Margin="30,103,0,0" VerticalAlignment="Top" Click="NGen_Click"/>
-        <Button x:Name="GGen" Content="Сгенерировать g" HorizontalAlignment="Left" Margin="30,128,0,0" VerticalAlignment="Top" Click="GGen_Click"/>
+        <Button x:Name="GGen" Content="Сгенерировать g" HorizontalAlignment="Left" Margin="30,130,0,0" VerticalAlignment="Top" Click="GGen_Click"/>
+        <Label Content="SKa = " HorizontalAlignment="Left" Margin="216,49,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ska_val" Content="" HorizontalAlignment="Left" Margin="263,44,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="SKGen" Content="Сгенерировать SK" HorizontalAlignment="Left" Margin="216,80,0,0" VerticalAlignment="Top" Click="SKGen_Click"/>
+        <Label Content="PKa = " HorizontalAlignment="Left" Margin="216,113,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="pka_val" Content="" HorizontalAlignment="Left" Margin="258,113,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="PKGen" Content="Сгенерировать PK" HorizontalAlignment="Left" Margin="216,146,0,0" VerticalAlignment="Top" Click="PKGen_Click"/>
+        <Button x:Name="Send_PK" Content="Отправить PK" HorizontalAlignment="Left" Margin="228,189,0,0" VerticalAlignment="Top" Click="Send_PK_Click"/>
+        <Label Content="Ключи" HorizontalAlignment="Left" Margin="211,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="PKb = " HorizontalAlignment="Left" Margin="222,227,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="pkb_val" Content="" HorizontalAlignment="Left" Margin="273,227,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сессия" HorizontalAlignment="Left" Margin="363,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ra = " HorizontalAlignment="Left" Margin="373,46,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="RA_Gen" Content="Сгенерировать Ra" HorizontalAlignment="Left" Margin="373,77,0,0" VerticalAlignment="Top" Click="RA_Gen_Click"/>
+        <Label x:Name="ra_val" Content="" HorizontalAlignment="Left" Margin="416,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="A = (g^Ra) mod n" HorizontalAlignment="Left" Margin="373,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="A =" HorizontalAlignment="Left" Margin="373,130,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="A_val" Content="" HorizontalAlignment="Left" Margin="402,130,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ACalc" Content="Вычислить A" HorizontalAlignment="Left" Margin="373,161,0,0" VerticalAlignment="Top" Click="ACalc_Click"/>
+        <Button Content="Послать А Бобу" HorizontalAlignment="Left" Margin="373,194,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label Content="B = " HorizontalAlignment="Left" Margin="222,258,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="b_val" Content="" HorizontalAlignment="Left" Margin="258,258,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сеансовый ключ = " HorizontalAlignment="Left" Margin="226,289,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="SessKey" Content="" HorizontalAlignment="Left" Margin="349,289,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="CalcSessKey" Content="Вычислить сеансовый ключ" HorizontalAlignment="Left" Margin="234,320,0,0" VerticalAlignment="Top" Click="CalcSessKey_Click"/>
     </Grid>
 
 </Window>

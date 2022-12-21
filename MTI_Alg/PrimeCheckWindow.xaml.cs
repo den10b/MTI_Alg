@@ -19,7 +19,7 @@ namespace MTI_Alg
     /// </summary>
     public partial class PrimeCheckWindow : Window
     {
-        public PrimeCheckWindow(int old)
+        public PrimeCheckWindow(ulong old)
         {
             InitializeComponent();
             Box1.Visibility = Visibility.Hidden;

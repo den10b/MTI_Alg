@@ -30,7 +30,6 @@ namespace MTI_Alg
         private ulong pr1;
         private ulong pr2;
         private Randomer RNG = new Randomer();
-        private Mod M = new Mod();
         public string request = "";
 
         private void PrimeNumGen_Load(object sender, EventArgs e)
@@ -81,7 +80,7 @@ namespace MTI_Alg
                 }
                 for (ulong i = 3; i < current / 2; i += 2)
                 {
-                    if (M.mod(current, i) == 0)
+                    if (Mops.mod(current, i) == 0)
                         innercheck = 1;
                 }
                 if ((innercheck == -1) && (RNG.Generate() > 9))
@@ -89,7 +88,7 @@ namespace MTI_Alg
                     result = current;
                     check = 1;
                 }
-                current = M.mod(current + 2 * RNG.Generate() * RNG.Generate(), max);
+                current = Mops.mod(current + 2 * RNG.Generate() * RNG.Generate(), max);
                 if (current == 1)
                     current = 3;
             }
@@ -101,7 +100,7 @@ namespace MTI_Alg
         {
             if (NumDigts.Text != "")
             {
-                try{ var kkk = Convert.ToInt32(NumDigts.Text); }
+                try{ var kkk = Convert.ToInt64(NumDigts.Text); }
                 catch{ return; }
 
                 ulong tpr1 = 0;
@@ -131,10 +130,10 @@ namespace MTI_Alg
 
         private void PrimeCheck_Click(object sender, RoutedEventArgs e)
         {
-            int old = 7;
+            ulong old = 7;
             try
             {
-                old = Convert.ToInt32(Result.Content);
+                old = (ulong) Convert.ToInt64(Result.Content);
             }
             catch
             {
