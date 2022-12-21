@@ -19,7 +19,7 @@ namespace MTI_Alg
             s1 ^= s1 >> 71;
             s1 ^= s0;
             s1 ^= s0 >> 92;
-            state1 = s1;
+            state1 = s1+1;
             return (state0 + state1) % 11;
         }
         public uint GenLil(int limit)

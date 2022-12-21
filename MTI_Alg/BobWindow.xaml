@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MTI_Alg"
         mc:Ignorable="d"
-        Title="Bob" Height="450" Width="800">
+        Title="Bob" Height="450" Width="527">
     <Grid>
         <Label x:Name="n_label1" Content="n =" HorizontalAlignment="Left" Margin="30,41,0,0" VerticalAlignment="Top"/>
         <Label x:Name="g_label" Content="g =" HorizontalAlignment="Left" Margin="30,72,0,0" VerticalAlignment="Top"/>

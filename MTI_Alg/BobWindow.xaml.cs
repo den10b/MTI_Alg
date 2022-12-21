@@ -108,7 +108,7 @@ namespace MTI_Alg
                 }
             }
 
-            return Convert.ToString(tpr1%10000);
+            return Convert.ToString(tpr1% 1000000);
 
         }
 
@@ -137,22 +137,11 @@ namespace MTI_Alg
             ulong A = (ulong) Convert.ToInt64(A_val.Content);
             ulong SKb = (ulong) Convert.ToInt64(skb_val.Content);
             ulong n = (ulong) Convert.ToInt64(n_value.Content);
-            //var res = Mod.mod((Pow(Pka, Rb) * Pow(A, SKb)), n);
             ulong lef = Mops.powMod(Pka,Rb, n);
             ulong rig = Mops.powMod(A,SKb, n);
             ulong res = Mops.mulMod(lef,rig,n);
             SessKey.Content = res;
         }
-
-
-
-
-
-
-
-
-
-
 
 
 

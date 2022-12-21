@@ -33,6 +33,7 @@ namespace MTI_Alg
                 {
                     sum -= n;
                 }
+                Console.WriteLine(sum);
             }
             return sum;
         }
@@ -49,9 +50,11 @@ namespace MTI_Alg
                     {
                         sum -= n;
                     }
+                    Console.WriteLine(sum);
                 }
                 tmp = sum;
             }
+            
             return tmp;
         }
 
